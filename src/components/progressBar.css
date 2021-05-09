@@ -1,0 +1,89 @@
+.progressbar {
+    background-color: #EAEAEA;
+    border-radius: 100px 0px 0px 100px;
+    padding: 0;
+    height: 24px;
+    opacity: 1;
+  }
+  
+  .progressbar>div {
+    background: #3546AB 0% 0% no-repeat padding-box;
+    width: 40%;
+    height: 24px;
+    border-radius: 10px;
+    border-radius: 100px;
+    opacity: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .progress-parent{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    width: 952px;
+    height: 65px;   
+  }
+  .progress-details{
+      display: flex;
+  }
+  .drafting-date{
+      font-size: 12px;
+      width: 62px;
+      height: 35px;
+      color: #BDBDBD;
+      text-align: center;
+      font: normal normal normal 12px/18px Poppins;
+      letter-spacing: 0px;
+      margin-right: 98px;
+  }
+  .mentor-review-date{
+      font-size: 12px;
+      color: #BDBDBD;
+      text-align: center;
+      width: 86px;
+      height: 35px;
+      font: normal normal normal 12px/18px Poppins;
+      letter-spacing: 0px;
+      margin-right: 98px;
+  }
+  .quality-check{
+      width: 84px;
+      /* height: 35px; */
+      text-align: center;
+        font: normal normal medium 12px/18px Poppins;
+        letter-spacing: 0px;
+        color: #6270BD;
+        opacity: 1;
+        font-size: 12px;
+  }
+  .bar-width{
+      display: flex;
+      justify-content: space-between;
+  }
+  .circle-start{
+    width: 12px;
+    height: 12px;
+    color: #FFFFFF;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+  margin: auto 0;
+  border-radius: 50%;
+  }
+  .circle-mid{
+    width: 12px;
+    height: 12px;
+    color: #FFFFFF;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: auto 0;
+    border-radius: 50%;
+  }
+  .circle-end{
+    width: 12px;
+    height: 12px;
+    color: #FFFFFF;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1; 
+    margin: auto 0;
+    border-radius: 50%;
+  }
