@@ -2,14 +2,18 @@ import React from 'react';
 import './progressBar.css';
 
 const ProgressBar = () => {
-    // const listProp = ["Drafting", "Mentor Review", "Quality Check"];
-    const listProp = [{ text: "Drafting", date: "17 May 2020" }, { text: "Mentor Review", date: "22 June 2020" }, { text: "Quality Check", date: "" }];
+    const listProp = ["Drafting", "Mentor Review", "Quality Check"];
+    const dateProps=["17 May 2020", "22 June 2020"]
     const listLength = listProp.length;
+    const dateLength=dateProps.length;
+    const dateWidth = 11*dateLength;
     const slideWidth = 11*listLength;
     const slideWidthStyle = {
         width: `${slideWidth}%`
     }
-  
+    const dateWidthStyle = {
+        width: `${dateWidth}%`
+    }
     // const FirstFilteredList = listProp.filter(list => {
     //     return list.text === "Quality Check"
     // });
@@ -30,12 +34,18 @@ const ProgressBar = () => {
                })} */}
                 {
                    listProp && listProp.map((list) => (
-                        <p key={list.text} className={list.text==='Quality Check'? "Quality": "list"} >
-                            {list.text} {list.date}
+                        <p key={list} className={list==='Quality Check'? "Quality": "list"} >
+                            {list} 
                         </p>
                     ))
                 }
             </div>
+                <div className="list dateList my-0" style={dateWidthStyle}>
+
+                {
+                   dateProps && dateProps.map((date) =><span key={date}>{date}</span>)
+                }
+                </div>
             {/* <div className="progress-details">
                <p className="drafting-date"> 
                    Drafting 17 May 20
@@ -50,7 +60,7 @@ const ProgressBar = () => {
             <div className="progressbar">
                 <div className="bar-width" style={slideWidthStyle}>
                     {
-                       listProp.map(list=>  <div className="circle"></div>)
+                       listProp.map(list=>  <div key={list} className="circle"></div>)
                     }
                  
                 </div>

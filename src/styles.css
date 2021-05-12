@@ -1,5 +1,5 @@
 .container{
-  width: 990px;
+  max-width: 990px;
   height: 215px;
   box-sizing: border-box;
   background: #FFFFFF 0% 0% no-repeat padding-box;

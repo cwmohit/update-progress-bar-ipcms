@@ -20,7 +20,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 20px;
-    width: 952px;
+    max-width: 952px;
     height: 65px;   
   }
   .progress-details{
@@ -32,12 +32,19 @@
 .list{
   font-size: 12px;
   width: 82px;
-  height: 35px;
+  height: auto;
   color: #BDBDBD;
   text-align: center;
   font: normal normal normal 12px/18px Poppins;
   letter-spacing: 0px;
   margin-right: 20px;
+}
+.dateList{
+  display: flex;
+  width: 82px;
+  margin-right: 20px;
+  justify-content: space-around;
+  margin-bottom: 4px;
 }
 .Quality{
   width: 84px;
