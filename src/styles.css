@@ -6,6 +6,8 @@
   box-shadow: 0px 0px 6px #0000000F;
   border-radius: 8px;
   opacity: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .timeline{
   font-size: 16px;
